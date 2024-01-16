@@ -54,7 +54,7 @@ jobs:
           logout: true
 
       - name: 8. Docker Push
-        run: docker push ${{ secret.DOCKER_USERNAME }}/istory
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/istory
 
 #
 #    - name: Publish to GitHub Packages
